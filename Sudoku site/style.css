@@ -1,0 +1,85 @@
+* {
+    border-radius: 5px;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgoldenrod;
+}
+
+h1 {
+    margin-top: 25px;
+    color: black;
+}
+
+hr {
+    width: 35%;
+    margin: 0 auto;
+}
+
+button {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100px;
+    font-size: 15px;
+    background-color: rgb(239, 219, 120);
+
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.large-box {
+    margin: 0 auto;
+    width: 432px;
+    height: 435px;
+    display: grid;
+    grid-template-columns: repeat(3, 144px);
+    grid-template-rows: repeat(3, 144px);
+    /* background-color: lightgoldenrodyellow; */
+}
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 47px);
+    height: 144px;
+    border: 2px solid darkgoldenrod;
+}
+
+.col {
+    display: grid;
+    grid-template-rows: repeat(3, 48px);
+}
+
+.tile {
+    padding-top: 10px;
+    border: 0.5px solid darkgoldenrod;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    font-size: x-large;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tile:hover {
+    cursor: pointer;
+    background-color: rgb(232, 232, 232);
+}
+
+input {
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.addednumber {
+    color: rgb(253, 104, 50);
+}

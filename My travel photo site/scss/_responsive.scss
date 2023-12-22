@@ -1,0 +1,58 @@
+@include media-md {
+    .nav {
+        width: 40vw;
+    }
+    .photos {
+        .page-title {
+            font-size: 2.5rem;
+        }
+        &_background {
+            height: 40vh;
+        }
+        &_items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &_btn {
+            font-size: 3rem;
+        }
+    }
+
+    .photo-city {
+        .page-title {
+            font-size: 2.5rem;
+        }
+        &_background {
+            height: 40vh;
+        }
+        &_items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &_btn {
+            font-size: 3rem;
+        }
+    }
+}
+
+@include media-lg {
+    .photos {
+        &_items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .photo-city {
+        &_items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@include media-xl {
+    .photos_background {
+        height: 50vh;
+    }
+
+    .photo-city_background {
+        height: 50vh;
+    }
+}

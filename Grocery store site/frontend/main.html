@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering System</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/aa474f2e72.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h3>Grocery Store</h3>
+        <div class="icons">
+            <!-- Delete emplyee data -->
+            <i class="delEmp-btn fa-solid fa-gear"></i>
+            <!-- Cart button, show contents in a cart -->
+            <i class="cart-btn fas fa-shopping-basket"></i>
+            <!-- Show button, show order history -->
+            <i class="show-btn fa-solid fa-clock-rotate-left"></i>
+            <!-- Log out button -->
+            <i class="logout-btn fa-solid fa-arrow-right-from-bracket"></i>
+        </div>
+    </header>
+
+    <main>
+        <h4 class="username">User:</h4>
+
+        <!-- Add products button, add products data to the products list -->
+        <div class="showform-btn"><p>+</p></div>
+    
+        <!-- form to add the data of new products -->
+        <div class="addpr col-4">
+            <form class="addnewpr-form">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="pid" placeholder="Product ID" required/>
+                    <label for="formId1">Product ID</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="pname" placeholder="Product Name" required/>
+                    <label for="formId1">Product Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="price" placeholder="Price" required/>
+                    <label for="formId1">Price</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="pimg" placeholder="Product image path" required/>
+                    <label for="formId1">Product image path</label>
+                </div>
+                <button type="submit" class="addnewpr btn btn-success mt-4">Add new products</button>
+            </form>
+        </div>
+
+        <!-- delete employee data -->
+        <div class="div-delEmp">
+            <form class="delEmp-form">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="uid" name="uid" placeholder="User ID" required/>
+                    <label for="formId1">User ID</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required/>
+                    <label for="formId1">First Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" required/>
+                    <label for="formId1">Last Name</label>
+                </div>
+                <button type="submit" class="addnewpr btn btn-danger mt-4">Delete employee data</button>
+            </form>
+        </div>
+        
+        <!-- cart -->
+        <div class="div-cart">
+            <div class="cart-table table-responsive-sm">
+                <table border="1" class="cart table">
+                    <thead>
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Amount</th>
+                            <th>Total</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- add the data of products in this table -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" style="text-align: right;">Total Price:</td>
+                            <td colspan="2">$0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <!-- Buy button -->
+                <button class="buy-btn btn btn-outline-warning" type="button">Buy</button>      
+            </div>
+        </div>
+    
+        <!-- order history -->
+        <div class="order-history"></div>
+    
+        <!-- products cards -->
+        <div class="products-cards"></div>
+    </main>
+</body>
+<script type="module" src="./js/main.js"></script>
+</html>
