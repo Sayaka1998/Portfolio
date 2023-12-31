@@ -1,0 +1,253 @@
+* {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-family: 'Zen Kurenaido', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    background-color: #ffffff;
+    margin-top: 100px;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(83, 132, 83);
+    z-index: 5;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 80%;
+    padding: 25px 0;
+}
+
+header nav ul li {
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover {
+    color: rgb(185, 52, 52);
+}
+
+main {
+    width: 100%;
+}
+
+.site-title {
+    text-align: center;
+    background-image: url("./images/背景.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    height: 500px;
+    width: 95%;
+}
+
+.site-title h1 {
+    font-size: 3rem;
+    padding: 210px 20%;
+    color: white;
+    text-shadow: rgb(83, 132, 83) 3px 3px 3px;
+}
+
+.noen {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.noen h2 {
+    font-size: 2rem;
+}
+
+.noen p {
+    padding: 15px 20% 0;
+}
+
+.shohin {
+    padding-top: 100px;
+}
+
+.cherry-title h3{
+    font-size: 1.5rem;
+}
+
+.hinshu-box {
+    padding-top: 50px;
+}
+
+.hinshu-box h4 {
+    font-size: 1.2rem;
+}
+
+.cherry-image {
+    padding: 20px 0;
+    width: 300px;
+    height: 300px;
+}
+
+.cherry-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hinshu-box p {
+    padding: 0 20%;
+}
+
+.access {
+    padding-top: 100px;
+}
+
+.access h3 {
+    padding-bottom: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.access h3::before, .access h3::after {
+    background-color: black;
+    border-radius: 3px;
+    content: "";
+    height: 3px;
+    width: 60px;
+    margin-top: 5px;
+}
+
+.access h3::before {
+    margin-right: 10px;
+}
+
+.access h3::after {
+    margin-left: 10px;
+}
+
+.access p {
+    padding: 5px 0;
+}
+
+.contact {
+    padding-top: 100px;
+}
+
+.contact h3 {
+    padding-bottom: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contact h3::before, .contact h3::after {
+    background-color: black;
+    border-radius: 3px;
+    content: "";
+    height: 3px;
+    width: 60px;
+    margin-top: 5px;
+}
+
+.contact h3::before {
+    margin-right: 10px;
+}
+
+.contact h3::after {
+    margin-left: 10px;
+}
+
+.contact p {
+    padding: 5px 0;
+}
+
+.back-top {
+    padding: 100px 0 50px;
+}
+
+.back-top a {
+    color: black;
+}
+
+.back-top a:hover {
+    color: rgb(185, 52, 52);
+}
+
+footer {
+    height: 80px;
+    background-color: rgb(83, 132, 83);
+}
+
+footer .copy {
+    padding: 28px 10px;
+}
+
+footer p {
+    text-align: left;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+
+    header nav ul {
+        display: flex;
+        justify-content: right;
+        width: 65%;
+    }
+    
+    header nav ul li {
+        font-size: 1.2rem;
+    }
+
+    .site-title {
+        height: 600px;
+        width: 97%;
+    }
+
+    .site-title h1 {
+        font-size: 4rem;
+        padding: 250px 20%;
+        letter-spacing: 15px;
+    }
+
+    .noen p {
+        padding: 15px 25% 0;
+    }
+
+    .hinshu {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .acccess-contact {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    footer .copy {
+        padding: 28px 20px;
+    }
+
+}
+@media screen and (min-width: 1024px) {
+
+    .noen p {
+        padding: 15px 30% 0;
+    }
+
+    .hinshu {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
